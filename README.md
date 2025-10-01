@@ -59,11 +59,13 @@ npm run dev
 📂 Project Structure
 
 practicum-projects/
-├── api/        # NestJS backend (Prisma + CRUD endpoints)
-├── web/        # Next.js frontend (UI + Tailwind)
-├── infra/      # Docker Compose setup for PostgreSQL
-└── README.md   # Project documentation
-
+├── api/         # NestJS backend (Prisma + CRUD endpoints)
+├── web/         # Next.js frontend (UI + Tailwind)
+├── infra/       # Docker Compose setup for PostgreSQL
+├── docs/        # 📸 Screenshots & documentation assets
+│   ├── screenshot-dark.png
+│   └── screenshot-light.png
+└── README.md    # Project documentation (links to docs/)
 
 🔗 API Endpoints
 
@@ -89,3 +91,9 @@ Tasks
 
 ### Light Mode
 ![Light Mode Screenshot](docs/screenshot-light.png)
+
+👨‍💻 Author
+
+Name: Fivos Kapsalis
+
+GitHub: Fivkas(https://github.com/Fivkas)
