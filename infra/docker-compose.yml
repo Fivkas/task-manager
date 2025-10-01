@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgis/postgis:14-3.3
+    platform: linux/amd64
+    container_name: practicum_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: practicum
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+
