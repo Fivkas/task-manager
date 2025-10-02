@@ -12,9 +12,9 @@ type Task = {
 export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [title, setTitle] = useState("");
-  const [darkMode, setDarkMode] = useState(true); // 👈 κρατάμε το theme
+  const [darkMode, setDarkMode] = useState(true); //  keep the theme
 
-  // Φέρε tasks από το NestJS API
+  // Bring tasks from NestJS API
   useEffect(() => {
     fetch("http://localhost:4000/tasks")
       .then((res) => res.json())
@@ -71,7 +71,7 @@ export default function Home() {
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Νέο task..."
+          placeholder="New task..."
           className={`px-3 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 ${
             darkMode
               ? "bg-gray-800 text-white border-gray-600"
@@ -86,7 +86,7 @@ export default function Home() {
         </button>
       </div>
 
-      {/* Λίστα με tasks */}
+      {/* Tasks list */}
       <ul className="space-y-3 w-full max-w-md">
         {tasks.map((task) => (
           <li
