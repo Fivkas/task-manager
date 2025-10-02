@@ -1,100 +1,67 @@
-# 📝 Task Manager App
+# ✅ Task Manager
 
-A full-stack task management application built with **NestJS + Prisma + PostgreSQL** on the backend and **Next.js + Tailwind CSS** on the frontend.
-
----
-
-## ✨ Features
-
-- ➕ Add new tasks  
-- 📋 View all tasks  
-- ✏️ Update task title / status  
-- ✅ Toggle completion with a single click  
-- ❌ Delete tasks  
-- 🌙/☀️ Dark/Light mode toggle in the frontend  
+A **full-stack task management app** built as part of a practicum project.  
+It uses **NestJS + Prisma + PostgreSQL** for the backend and **Next.js + Tailwind CSS** for the frontend.  
+The database runs inside a **Docker** container.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Tech Stack
 
-### Backend
-- [NestJS](https://nestjs.com/)  
-- [Prisma ORM](https://www.prisma.io/)  
-- [PostgreSQL](https://www.postgresql.org/) (with PostGIS, via Docker)  
-
-### Frontend
-- [Next.js](https://nextjs.org/)  
-- [React](https://react.dev/)  
-- [Tailwind CSS](https://tailwindcss.com/)  
-
-### DevOps
-- [Docker](https://www.docker.com/) (for database)  
-- Git & GitHub  
+![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)
+![NestJS](https://img.shields.io/badge/NestJS-Backend-red?logo=nestjs)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-blue?logo=prisma)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-DB-blue?logo=postgresql)
+![Docker](https://img.shields.io/badge/Docker-Container-blue?logo=docker)
+![Next.js](https://img.shields.io/badge/Next.js-Frontend-black?logo=next.js)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-UI-blue?logo=tailwindcss)
 
 ---
 
-## 🚀 Getting Started
+## 📂 Project Structure
 
-### 1. Database
+```text
+practicum-projects/
+├── api/        # NestJS backend (Prisma + CRUD endpoints)
+├── web/        # Next.js frontend (UI + Tailwind)
+├── infra/      # Docker Compose setup for PostgreSQL
+├── docs/       # 📸 Screenshots & documentation assets
+│   ├── screenshot-dark.png
+│   └── screenshot-light.png
+└── README.md   # Project documentation
 
+📸 Screenshots
+
+### Dark Mode ![Dark Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-dark.png) 
+
+### Light Mode ![Light Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-light.png)
+
+⚙️ Setup Instructions
+
+Clone the repo and run the following:
+
+# clone repo
+git clone https://github.com/Fivkas/task-manager.git
+cd task-manager
+
+# start database
 cd infra
 docker compose up -d
 
-### 2. Backend
-
-cd api
+# backend (NestJS)
+cd ../api
 npm install
 npm run start:dev
 
-👉 Backend runs on http://localhost:4000
-
-### 3. Frontend
-
-cd web
+# frontend (Next.js)
+cd ../web
 npm install
 npm run dev
 
-👉 Frontend runs on http://localhost:3000
+The backend runs on http://localhost:4000
+The frontend runs on http://localhost:3000
 
-📂 Project Structure
+👨‍💻 Author
 
-practicum-projects/
-├── api/         # NestJS backend (Prisma + CRUD endpoints)
-├── web/         # Next.js frontend (UI + Tailwind)
-├── infra/       # Docker Compose setup for PostgreSQL
-├── docs/        # 📸 Screenshots & documentation assets
-│   ├── screenshot-dark.png
-│   └── screenshot-light.png
-└── README.md    # Project documentation (links to docs/)
-
-🔗 API Endpoints
-
-Tasks
-
-* GET /tasks → Fetch all tasks
-
-* GET /tasks/:id → Fetch a single task
-
-* POST /tasks → Create a new task
-
-* PUT /tasks/:id → Update a task
-
-* POST /tasks/:id/toggle → Toggle completed status
-
-* DELETE /tasks/:id → Delete a task
-
-
-## 📸 Screenshots
-
-### Dark Mode
-![Dark Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-dark.png)
-
-### Light Mode
-![Light Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-light.png)
-
----
-
-## 👨‍💻 Author
-
-**Fivos Kapsalis**  
-🔗 [Fivkas](https://github.com/Fivkas)
+**Fivos Kapsalis**
+🔗 GitHub: [Fivkas](https://github.com/Fivkas)
