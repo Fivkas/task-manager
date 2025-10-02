@@ -86,11 +86,8 @@ Tasks
 
 ## Screenshots
 
-### Dark Mode
-![Dark Mode Screenshot](docs/screenshot-dark.png)
-
-### Light Mode
-![Light Mode Screenshot](docs/screenshot-light.png)
+![Dark Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-dark.png)
+![Light Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-light.png)
 
 ## 👨‍💻 Author
 
