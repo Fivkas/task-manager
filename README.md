@@ -36,7 +36,7 @@ A full-stack task management application built with **NestJS + Prisma + PostgreS
 ## 🚀 Getting Started
 
 ### 1. Database
-```bash
+bash
 cd infra
 docker compose up -d
 
