@@ -36,30 +36,32 @@ practicum-projects/
 
 ### Light Mode ![Light Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-light.png)
 
-# ⚙️ Setup Instructions
+## ⚙️ Setup Instructions
 
 Clone the repo and run the following:
 
-//clone repo
+```bash
+# clone repo
 git clone https://github.com/Fivkas/task-manager.git
 cd task-manager
 
-//start database
+# start database
 cd infra
 docker compose up -d
 
-//backend (NestJS)
+# backend (NestJS)
 cd ../api
 npm install
 npm run start:dev
 
-//frontend (Next.js)
+# frontend (Next.js)
 cd ../web
 npm install
 npm run dev
+```
+The backend runs on 👉 http://localhost:4000
 
-The backend runs on http://localhost:4000
-The frontend runs on http://localhost:3000
+The frontend runs on 👉 http://localhost:3000
 
 # 👨‍💻 Author
 
