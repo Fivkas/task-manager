@@ -29,7 +29,7 @@ practicum-projects/
 │   ├── screenshot-dark.png
 │   └── screenshot-light.png
 └── README.md   # Project documentation
-
+```
 📸 Screenshots
 
 ### Dark Mode ![Dark Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-dark.png) 
