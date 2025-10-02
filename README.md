@@ -84,12 +84,17 @@ Tasks
 * DELETE /tasks/:id → Delete a task
 
 
-## Screenshots
+## 📸 Screenshots
 
+### Dark Mode
 ![Dark Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-dark.png)
+
+### Light Mode
 ![Light Mode Screenshot](https://raw.githubusercontent.com/Fivkas/task-manager/main/docs/screenshot-light.png)
+
+---
 
 ## 👨‍💻 Author
 
-- Name: **Fivos Kapsalis**  
-- GitHub: [Fivkas](https://github.com/Fivkas)
+**Fivos Kapsalis**  
+🔗 [Fivkas](https://github.com/Fivkas)
